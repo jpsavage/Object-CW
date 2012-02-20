@@ -1,0 +1,35 @@
+class Record
+{
+    private String[] data;
+    
+    Record(String[] values)
+    {
+        data = values;
+    }
+    
+    String field(int col)
+    {
+        if((col < 0) || (col > data.length - 1))
+        {
+            throw new Error("Bad column." );
+        }
+        String result = new String();
+        result = data[col];
+        return result;
+    }
+    
+    void field(int col, String value)
+    {
+        if((col < 0)||(col > (data.length - 1)))
+        {
+            throw new Error("Bad column." );
+        }
+        data[col] = value;
+    }
+    
+    int fields()
+    {
+        int result = data.length;
+        return result;
+    }
+}

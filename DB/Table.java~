@@ -1,0 +1,36 @@
+import java.util.*;
+
+class Table
+{
+    
+    private String table_name;
+    private String [] table_columns;
+    private ArrayList<Record> records;
+    
+    Table(String name, String[] columns)
+    {
+        table_name = name;
+        table_columns = columns;
+        records = new ArrayList<Record>();
+    }
+    String name()
+    {
+        return table_name;
+    }
+    String name(int col)
+    {
+        return table_columns[col];
+    }
+    int rows()
+    {
+        return records.size();
+    }
+    Record select(int row)
+    {
+        return records.get(row);
+    }
+    public static void main()
+    {
+        Table testTable = new Table("TestTable", )
+    }
+}
