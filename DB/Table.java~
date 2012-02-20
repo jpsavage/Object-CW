@@ -1,5 +1,4 @@
 import java.util.*;
-//comment
 
 class Table
 {
